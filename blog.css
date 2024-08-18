@@ -1,0 +1,283 @@
+/* Reset some default styles */
+
+body,
+h1,
+h2,
+p,
+a {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* General body styling */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+/* Navbar styling */
+
+.navbar {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.navbar-nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.navbar-nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* Banner styling */
+
+.banner {
+    background: rgba(105, 105, 105, 0.432);
+    padding: 5rem 0;
+    text-align: center;
+}
+
+#home-banner:target {
+    display: none;
+}
+
+.banner-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+/* Design section styling */
+
+.design {
+    padding: 2rem 0;
+    background: #f4f4f4;
+}
+
+.design .title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.design-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.design-item {
+    background: #fff;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: calc(33% - 2rem);
+    box-sizing: border-box;
+}
+
+
+/* Center the image in the middle of the frame */
+
+.design-item .design-img,
+.blog-item .blog-img {
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+}
+
+.design-item .design-img img,
+.blog-item .blog-img img {
+    width: 100%;
+    /* Adjust the percentage as needed for smaller size */
+    max-width: 300px;
+    /* Ensure a maximum width */
+    height: auto;
+    /* Maintain the aspect ratio */
+}
+
+.design-item .design-img img {
+    margin-bottom: 15px;
+    /* Space between the image and text */
+}
+
+.design-title {
+    margin-top: 1rem;
+}
+
+.design-title a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more {
+    color: #333;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    border: 2px solid #333;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.read-more:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+
+/* Blog section styling */
+
+.blog {
+    padding: 2rem 0;
+}
+
+.blog .title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.blog-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.blog-item {
+    background: #fff;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: calc(33% - 2rem);
+    box-sizing: border-box;
+}
+
+.blog-text {
+    margin-top: 1rem;
+}
+
+.blog-text h2 {
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+}
+
+.blog-text a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.blog-text a:hover {
+    text-decoration: underline;
+}
+
+
+/* About section styling */
+
+.about {
+    padding: 2rem 0;
+    background: #f4f4f4;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-content img {
+    width: 50%;
+    border-radius: 8px;
+}
+
+.about-text {
+    width: 45%;
+}
+
+.about-text .title h2 {
+    font-size: 2rem;
+}
+
+.about-text p {
+    margin-top: 1rem;
+}
+
+
+/* Footer styling */
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.social {
+    color: blue;
+}
+
+
+/* CSS for image size adjustment and centering */
+
+.design-item .design-img,
+.blog-item .blog-img {
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+}
+
+.design-item .design-img img,
+.blog-item .blog-img img {
+    width: 100%;
+    /* Adjust the percentage as needed for smaller size */
+    max-width: 300px;
+    /* Ensure a maximum width */
+    height: auto;
+    /* Maintain the aspect ratio */
+}
+
+
+/* Additional styling adjustments */
+
+.design-item .design-img img {
+    margin-bottom: 15px;
+    /* Space between the image and text */
+}
+
+.blog-item .blog-img img {
+    margin-bottom: 10px;
+    /* Space between the image and text */
+}
+
+.social {
+    color: tomato;
+}
