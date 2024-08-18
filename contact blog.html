@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>contact</title>
+    <style>
+        #contact {
+            background-color: pink;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 50%;
+            max-width: 1300px;
+            font-size: 26px;
+        }
+        
+        #contact form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        #contact input,
+        #contact textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            color: #333;
+            width: 50%;
+            max-width: 1200px;
+        }
+        
+        #contact button {
+            padding: 10px 20px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 55%;
+            max-width: 200px;
+        }
+        
+        #contact button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<h2 style="text-align:center;color:red; font-size:30px">
+    <b>Contact</b>
+</h2>
+<section id="contact" style="background-color:lightblue">
+    <form action="submit_form.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="phnno.">Phone Number:</label>
+        <input type="email" id="phnno." name="phnno." required>
+
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+</html>
